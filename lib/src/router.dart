@@ -70,10 +70,10 @@ class OpenRouter<T> {
       entries.add(RouterEntry(entry.value, entry.key, node.pathMapping[entry.key]!));
     }
     if (node.allMatcher != null) {
-      entries.add(RouterEntry<T>(node.allMatcher!, "ALL", node.pathMapping["ALL"]!));
+      entries.add(RouterEntry<T>(node.allMatcher as T, "ALL", node.pathMapping["ALL"]!));
     }
     if (node.catchAll != null) {
-      entries.add(RouterEntry<T>(node.catchAll!, "CATCHALL", []));
+      entries.add(RouterEntry<T>(node.catchAll as T, "CATCHALL", []));
     }
     for (var entry in node.children.entries) {
       entries.addAll(_findRoutesRecursive(entry.value));
