@@ -3,3 +3,4 @@ library;
 
 export 'src/router.dart';
 export 'src/shelf.dart';
+export 'src/utils.dart';
