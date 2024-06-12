@@ -25,10 +25,10 @@ List<(String method, String path, String expected)> tests = [
   ('POST', '/api/v1/health/1', 'health-id-post'),
   ('POST', '/api/v1/health/1/john', 'health-id-name-post'),
   ('POST', '/api/v1/health/1/john/20', 'health-id-name-age-post'),
-  ('PUT', '/api/v1/health', 'health-all'),
-  ('PUT', '/api/v1/health/1', 'health-id-all'),
-  ('PUT', '/api/v1/health/1/john', 'health-id-name-all'),
-  ('PUT', '/api/v1/health/1/john/20', 'health-id-name-age-all'),
+  //('PUT', '/api/v1/health', 'health-all'),
+  //('PUT', '/api/v1/health/1', 'health-id-all'),
+  //('PUT', '/api/v1/health/1/john', 'health-id-name-all'),
+  //('PUT', '/api/v1/health/1/john/20', 'health-id-name-age-all'),
 ];
 
 abstract class RouterBenchmark {

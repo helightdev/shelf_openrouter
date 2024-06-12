@@ -1,5 +1,5 @@
 name: shelf_openrouter
-description: Fast and extensible routing for the shelf ecosystem.
+description: Fast and extensible routing for the shelf ecosystem with a shelf_router compatible api.
 version: 0.0.1
 repository: https://github.com/helightdev/shelf_openrouter
 issue_tracker: https://github.com/helightdev/catwalk/issues

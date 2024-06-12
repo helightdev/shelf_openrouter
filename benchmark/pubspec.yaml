@@ -8,6 +8,8 @@ environment:
 dependencies:
   routingkit: ^0.2.1
   shelf_router: ^1.1.4
+  spanner: ^1.0.1+5
+  alfred: any
   shelf_openrouter:
     path: ..
 

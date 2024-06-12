@@ -1,10 +1,14 @@
+import 'package:benchmark/alfred.dart';
 import 'package:benchmark/benchmark.dart' as benchmark;
 import 'package:benchmark/openrouter.dart';
 import 'package:benchmark/routingkit.dart';
 import 'package:benchmark/shelf_router.dart';
+import 'package:benchmark/spanner.dart';
 
 void main(List<String> arguments) {
   var count = 1000000;
+  runBenchmark(AlfredBenchmark(), "Alfred", count);
+  runBenchmark(SpannerBenchmark(), "Spanner", count);
   runBenchmark(ShelfRouterBenchmark(), "ShelfRouter", count);
   runBenchmark(RoutingkitBenchmark(), "Routingkit", count);
   runBenchmark(OpenrouterBenchmark(), "OpenRouter", count);
